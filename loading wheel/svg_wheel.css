@@ -16,3 +16,17 @@ circle {
     stroke-dasharray: 100;
     stroke-dashoffset: 10px;
 }
+
+#wheel {
+    position: relative;
+}
+
+#wheel::after {
+    content: attr(data-progress)"%";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    text-align: center;
+    top: calc(187px - 2rem);
+    font-size: 4rem;
+}
