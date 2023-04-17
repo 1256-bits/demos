@@ -1,0 +1,31 @@
+#wheel {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 50px;
+}
+
+.core {
+    height: 100%;
+    width: 100%;
+    background-color: darkgrey;
+    border-radius: 50%;
+}
+
+.half-circle {
+    width: 100%;
+    height: 100%;
+    border: 10px solid blue;
+    border-radius: 100%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.left {
+    clip-path: inset(0% 50% 0% 0%);
+}
+
+.right {
+    clip-path: inset(0% 0% 0% 50%);
+}
