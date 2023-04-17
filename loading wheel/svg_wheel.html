@@ -20,12 +20,11 @@
         const wheel = document.getElementById("wheel");
         const bar = document.querySelector(".bar");
         wheel.dataset.progress = 0;
-        bar.style.setProperty('stroke-dashoffset', 0);
         const interval = setInterval(() => {
             const offset = 100 - parseInt(wheel.dataset.progress);
             bar.style.setProperty('stroke-dashoffset', offset);
-            wheel.dataset.progress = parseInt(wheel.dataset.progress)+1;
-            if (wheel.dataset.progress > 100)
+            wheel.dataset.progress = parseInt(wheel.dataset.progress) + 1;
+            if (wheel.dataset.progress == 100)
                 clearInterval(interval);
         }, 100, wheel, bar);
     </script>
