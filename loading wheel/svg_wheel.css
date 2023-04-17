@@ -28,5 +28,6 @@ circle {
     position: absolute;
     text-align: center;
     top: calc(187px - 2rem);
+    left: 0;
     font-size: 4rem;
 }
