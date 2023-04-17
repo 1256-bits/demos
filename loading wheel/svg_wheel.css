@@ -13,4 +13,6 @@ circle {
 .bar {
     stroke: rgb(29, 157, 196);
     stroke-linecap: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 10px;
 }
