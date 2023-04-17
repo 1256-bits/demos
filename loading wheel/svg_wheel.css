@@ -14,7 +14,8 @@ circle {
     stroke: rgb(29, 157, 196);
     stroke-linecap: round;
     stroke-dasharray: 100;
-    stroke-dashoffset: 10px;
+    stroke-dashoffset: 100px;
+    transition: stroke-dashoffset .1s;
 }
 
 #wheel {
