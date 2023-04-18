@@ -1,0 +1,31 @@
+#wrapper {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    position: relative;
+}
+
+.fg,
+.bg {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.fg {
+    background-color: rgb(58, 58, 58);
+    height: 90%;
+    width: 90%;
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(rgb(106, 190, 218) var(--start), grey var(--start) 360deg);
+    top: -5%;
+    left: -5%;
+    z-index: -1;
+}
+
+:root {
+    --start: 0deg;
+}
