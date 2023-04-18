@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --rotate: 0deg;
+}
+
 #wheel {
     width: 1em;
     height: 1em;
@@ -31,9 +35,11 @@
 }
 
 .left {
-    transform: rotate(180deg);
+    transform: rotate(var(--rotate));
+    transition: transform .15s;
 }
 
 .right {
     display: none;
+    transform: rotate(180deg);
 }

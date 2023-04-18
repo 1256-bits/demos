@@ -16,6 +16,22 @@
             <div class="half-circle right"></div>
         </div>
     </div>
+    <script>
+        const root = document.documentElement;
+        const circle = document.querySelector(".circle");
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress++;
+            root.style.setProperty("--rotate",`${360 / 100 * progress}deg`);
+            if (progress == 50) {
+                circle.lastElementChild.style.display = "block";
+                circle.style.clip = "rect(auto, auto, auto, auto)";
+            }
+            if (progress >= 100) {
+                clearInterval(interval);
+            }
+        }, 100);
+    </script>
 </body>
 
 </html>
