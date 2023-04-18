@@ -11,17 +11,19 @@
 
 <body>
     <div id="wrapper">
-        <div class="fg"></div>
+        <div class="fg" data-progress="0%"></div>
         <div class="bg"></div>
     </div>
     <script>
         const root = document.documentElement;
+        const fg = document.querySelector(".fg");
         let progress = 0;
         const interval = setInterval(() => {
-            progress+=360/100;
-            root.style.setProperty("--start", `${progress}deg`);
-            if (progress >= 360)
-            clearInterval(interval);
+            progress++;
+            root.style.setProperty("--start", `${360 / 100 * progress}deg`);
+            fg.setAttribute("data-progress", `${progress}%`);
+            if (progress >= 100)
+                clearInterval(interval);
         }, 100)
     </script>
 </body>
