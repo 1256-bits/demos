@@ -1,15 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
 #wheel {
-    width: 400px;
-    height: 400px;
+    width: 1em;
+    height: 1em;
     position: relative;
+    font-size: 200px;
     margin: 50px;
 }
 
-.core {
+.circle {
     height: 100%;
     width: 100%;
-    background-color: darkgrey;
-    border-radius: 50%;
+    clip: rect(0, 1em, 1em, 0.5em);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .half-circle {
@@ -18,14 +25,15 @@
     border: 10px solid blue;
     border-radius: 100%;
     position: absolute;
-    top: -10px;
-    left: -10px;
+    clip: rect(0, 0.5em, 1em, 0);
+    top: 0;
+    left: 0;
 }
 
 .left {
-    clip-path: inset(0% 50% 0% 0%);
+    transform: rotate(180deg);
 }
 
 .right {
-    clip-path: inset(0% 0% 0% 50%);
+    display: none;
 }
