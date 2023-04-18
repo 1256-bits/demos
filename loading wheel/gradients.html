@@ -14,6 +14,16 @@
         <div class="fg"></div>
         <div class="bg"></div>
     </div>
+    <script>
+        const root = document.documentElement;
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress+=360/100;
+            root.style.setProperty("--start", `${progress}deg`);
+            if (progress >= 360)
+            clearInterval(interval);
+        }, 100)
+    </script>
 </body>
 
 </html>
