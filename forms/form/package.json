@@ -1,0 +1,17 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "description": "testing normalize.css and uncss for no reason",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss-modules": "^6.0.0",
+    "postcss-uncss": "^0.17.0",
+    "uncss": "^0.17.3"
+  }
+}
