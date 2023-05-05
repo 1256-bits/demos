@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <ul>
+            <li>
+                <label for="firs_name">First name: </label>
+                <input name="firs_name" type="text">
+            </li>
+            <li>
+                <label for="last_name">Last name: </label>
+                <input name="last_name" type="text">
+            </li>
+            <li>
+                <label for="email">Email: </label>
+                <input type="email" name="email">
+            </li>
+            <li>
+                <label for="birdthday">Birdthday: </label>
+                <input name="birdthday" type="date">
+            </li>
+            <li>
+                <label for="comment">Comment: </label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </li>
+            <li class="buttonpost">
+                <button type="submit">Submit</button>
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>
