@@ -7,11 +7,12 @@
     <style>
       * {
         box-sizing: border-box;
-      .value}
+      }
 
       body {
         margin: 0;
-      .value}
+        background-color: white;
+      }
 
       ul {
         height: 100vh;
@@ -21,11 +22,11 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-      .value}
+      }
 
       input {
         width: 600px;
-      .value}
+      }
     </style>
   </head>
 
@@ -33,24 +34,48 @@
     <ul class="container">
       <li>
         <label for="red">R</label>
-        <input type="range" id="red" name="red" min="0" max="255" />
+        <input type="range" id="red" name="red" min="0" max="255" value="255" />
+        <output for="red">255</output>
       </li>
       <li>
         <label for="green">G</label>
-        <input type="range" id="green" name="green" min="0" max="255" />
+        <input
+          type="range"
+          id="green"
+          name="green"
+          min="0"
+          max="255"
+          value="255"
+        />
+        <output for="green">255</output>
       </li>
       <li>
         <label for="blue">B</label>
-        <input type="range" id="blue" name="blue" min="0" max="255" />
+        <input
+          type="range"
+          id="blue"
+          name="blue"
+          min="0"
+          max="255"
+          value="255"
+        />
+        <output for="blue">255</output>
       </li>
     </ul>
     <script>
-      const [r, g, b] = document.querySelectorAll("input");
-      [r, g, b].forEach((color) =>
-        color.addEventListener(
-          "input",
-          (e) => (document.body.style.backgroundColor = `rgb(${r.value},${g.value},${b.value})`),
-        ),
+      const [red, green, blue] = document.querySelectorAll("input");
+      const outputs = new Map();
+
+      document.querySelectorAll("output").forEach((output) => {
+        const color = output.getAttribute("for");
+        outputs.set(color, output);
+      });
+
+      [red, green, blue].forEach((color) =>
+        color.addEventListener("input", (e) => {
+          document.body.style.backgroundColor = `rgb(${red.value},${green.value},${blue.value})`;
+          outputs.get(e.target.id).innerText = e.target.value;
+        }),
       );
     </script>
   </body>
