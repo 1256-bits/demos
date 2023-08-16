@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Norse-bold";
+  src: url("./Norse-Bold.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+.container {
+  display: flex;
+  height: 100svh;
+  margin-inline: 10%;
+}
+
+.hero-image {
+  background: url(./photo-1585202900225-6d3ac20a6962.avif);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 400px;
+  width: 600px;
+}
+
+.odin-logo {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: Norse-bold;
+  color: white;
+  font-size: 4rem;
+  margin-top: 30%;
+}
+ .odin-logo > p {
+    vertical-align: middle;
+    display: inline;
+    margin-top: 7%;
+}
+
+img {
+  height: 1.5em;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: slategray;
+}
