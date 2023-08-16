@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 400px;
+  min-width: 550px;
   width: 550px;
 }
 
