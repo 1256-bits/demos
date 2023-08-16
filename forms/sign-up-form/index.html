@@ -85,8 +85,8 @@
       const messageSpan = document.getElementById("password-mismatch");
       function validate(e) {
         if (password.value !== passwordConfirm.value) {
-          password.setCustomValidity("Passwords do not match!");
-          passwordConfirm.setCustomValidity("Passwords do not match!");
+          password.setCustomValidity("* Passwords do not match!");
+          passwordConfirm.setCustomValidity("* Passwords do not match!");
         } else {
           password.setCustomValidity("");
           passwordConfirm.setCustomValidity("");
