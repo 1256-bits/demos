@@ -54,14 +54,23 @@ img {
     margin-bottom: 1em;
 }
 
-a {
+.copyright a {
     text-decoration: underline;
 }
 
-a:visited {
+.copyright a:visited {
     color: slategray;
 }
 
 .main-section {
     background-color: rgb(245, 245, 245);
+    padding-block: 10%;
+}
+
+.padding-3rem {
+    padding-inline: 3rem;
+}
+
+.input-wrappers {
+    background-color: white;
 }
