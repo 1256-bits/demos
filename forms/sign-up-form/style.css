@@ -15,7 +15,7 @@ body {
 .container {
   display: flex;
   height: 100svh;
-  margin-inline: max(0, 250px);
+  margin-inline: 250px;
 }
 
 .hero-image {
