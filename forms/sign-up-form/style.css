@@ -15,7 +15,7 @@ body {
 .container {
   display: flex;
   height: 100svh;
-  margin-inline: 250px;
+  margin-inline: max(0, 250px);
 }
 
 .hero-image {
@@ -65,6 +65,7 @@ img {
 .main-section {
   background-color: rgb(245, 245, 245);
   padding-block: 10%;
+  width: max(500px, 800px);
 }
 
 .padding-3rem {
@@ -119,6 +120,10 @@ input:focus {
   border: 2px solid #2196f3;
   outline: none;
   box-shadow: 0 0 9px 0px gray;
+}
+
+input:invalid {
+    border: 1px solid red;
 }
 
 .form-main > * {
