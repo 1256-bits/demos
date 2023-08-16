@@ -37,10 +37,10 @@ body {
   margin-top: 40%;
   padding: 10px;
 }
- .odin-logo > p {
-    vertical-align: middle;
-    display: inline;
-    margin-top: 0.2em;
+.odin-logo > p {
+  vertical-align: middle;
+  display: inline;
+  margin-top: 0.2em;
 }
 
 img {
@@ -48,92 +48,115 @@ img {
 }
 
 .copyright {
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 1em;
+  color: white;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 1em;
 }
 
 .copyright a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .copyright a:visited {
-    color: slategray;
+  color: slategray;
 }
 
 .main-section {
-    background-color: rgb(245, 245, 245);
-    padding-block: 10%;
+  background-color: rgb(245, 245, 245);
+  padding-block: 10%;
 }
 
 .padding-3rem {
-    padding-inline: 3rem;
+  padding-inline: 3rem;
 }
 
 .form-main {
-    background-color: white;
+  background-color: white;
+  box-shadow: 0px 5px 11px 0px gray;
 }
 
 h2 {
-    line-height: 1;
-    margin-block: 1em;
-    font-weight: 500;
+  line-height: 1;
+  margin-block: 1em;
+  font-weight: 500;
 }
 
 h2 + h2 {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 h3 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .input-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  align-items: start;
 }
 
 .form-control {
-    display: flex;
-    flex-direction: column;
-    padding-block: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-block: 10px;
 }
 
 input {
-    width: 250px;
-    appearance: none;
-    font-size: 1rem;
-    padding: 5px;
-    border: 1px solid #d5d5d5;
-    border-radius: 0.2em;
+  width: 250px;
+  appearance: none;
+  font-size: 1rem;
+  padding: 5px;
+  border: 1px solid #d5d5d5;
+  border-radius: 0.2em;
 }
 
 .form-main > * {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 h3 {
-    padding-block: 1rem;
-    font-size: 1.5em;
-    color: #454545;
+  padding-block: 1rem;
+  font-size: 1.5em;
+  color: #454545;
 }
 
 label {
-    font-size: 0.8rem;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    color: rgb(75, 75, 75)
+  font-size: 0.8rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: rgb(75, 75, 75);
 }
 
 button {
-    appearance: none;
-    padding: 1em 3em;
-    border: none;
-    border-radius: 0.2em;
+  appearance: none;
+  padding: 1rem 3em;
+  border: none;
+  border-radius: 0.7rem;
+  margin: 30px 0;
+  background-color: darkolivegreen;
+  color: #ededed;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 11px 0px grey;
+  font-weight: 600;
+}
+
+button:hover {
+  box-shadow: 0px 0px 20px 6px grey;
+  transition: all 0.1s linear;
+  color: white;
+}
+
+button:active {
+    background-color: #82a34a;
+    color: black;
+}
+
+.already-registered {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
