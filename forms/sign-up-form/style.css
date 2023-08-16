@@ -130,3 +130,10 @@ label {
     letter-spacing: 1px;
     color: rgb(75, 75, 75)
 }
+
+button {
+    appearance: none;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 0.2em;
+}
