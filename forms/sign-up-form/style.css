@@ -65,13 +65,14 @@ img {
 .main-section {
     background-color: rgb(245, 245, 245);
     padding-block: 10%;
+    min-width: 500px;
 }
 
 .padding-3rem {
     padding-inline: 3rem;
 }
 
-.input-wrappers {
+.form-main {
     background-color: white;
 }
 
@@ -91,4 +92,40 @@ h2 + h2 {
 
 h3 {
     font-weight: 600;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    align-items: start;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+}
+
+input {
+    width: 200px;
+    appearance: none;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 0.2em;
+}
+
+.form-main > * {
+    padding-bottom: 1rem;
+}
+
+h3 {
+    padding-block: 1rem;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: rgb(75, 75, 75)
 }
