@@ -5,6 +5,7 @@
   --logo-icon-size: 2.5rem;
   --bar-icon-color: white;
   --search-icon-size: 1.5rem;
+  --big-profile-size: 4rem;
 }
 
 * {
@@ -79,30 +80,30 @@ li {
 }
 
 .page-header {
-    padding: 2% 5%;
+  padding: 2% 5%;
 }
 
 .top-row {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  align-items: center;
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .bell-icon {
-    justify-self: end;
-    margin-right: 1rem;
+  justify-self: end;
+  margin-right: 1rem;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .search-icon,
@@ -113,17 +114,23 @@ li {
 }
 
 input[type="search"] {
-    appearance: none;
-    border: none;
-    border-radius: 1em;
-    background-color: lightgray;
-    padding: 0.3em;
-    font-size: 1rem;
-    width: 100%;
+  appearance: none;
+  border: none;
+  border-radius: 1em;
+  background-color: lightgray;
+  padding: 0.3em 0.6em;
+  font-size: 1rem;
+  width: 100%;
 }
 
 .profile-small {
-    height: var(--logo-icon-size);
-    width: var(--logo-icon-size);
+  height: var(--logo-icon-size);
+  width: var(--logo-icon-size);
+  border: dotted red 1px;
+}
+
+.profile-big {
+  height: var(--big-profile-size);
+  width: var(--big-profile-size);
   border: dotted red 1px;
 }
