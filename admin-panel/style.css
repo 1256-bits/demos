@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 .sidebar {
   display: grid;
   grid-template-rows: repeat(3, auto);
