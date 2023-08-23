@@ -1,4 +1,4 @@
-@import url(https://fonts.bunny.net/css?family=roboto:500);
+@import url(https://fonts.bunny.net/css?family=roboto:100,300,400,500,700,900);
 
 :root {
   --icon-size: 1.875rem;
@@ -138,7 +138,7 @@ input[type="search"] {
 
 .profile-small,
 .profile-big {
-    border-radius: 100%
+  border-radius: 100%;
 }
 
 .greeting-msg {
@@ -149,12 +149,12 @@ input[type="search"] {
   align-items: center;
 }
 
-.greeting-msg:nth-child(2) {
-    align-self: end;
+.greeting-msg > div:nth-child(2) {
+  align-self: end;
 }
 
-.greeting-msg:last-child() {
-    font-size: 1.8rem;
+.greeting-msg > div:last-child {
+  font-size: 1.8rem;
 }
 
 .buttons {
@@ -175,14 +175,14 @@ button {
 }
 
 button:hover {
-    background-color: #60a5fa;
+  background-color: #60a5fa;
 }
 
 button:active {
-    background-color: #1d4ed8;
+  background-color: #1d4ed8;
 }
 
 .username {
-    font-size: 1.2rem;
-    font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
