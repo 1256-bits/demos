@@ -1,0 +1,47 @@
+@import url(https://fonts.bunny.net/css?family=roboto:500);
+
+:root {
+  --icon-size: 30px;
+  --logo-icon-size: 40px;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 2.2rem;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem;
+  font-family: Roboto;
+  letter-spacing: 1px;
+}
+
+.logo-icon {
+  height: var(--logo-icon-size);
+  width: var(--logo-icon-size);
+  border: dashed 1px red;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: var(--logo-icon-size) auto;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.5rem;
+}
+
+.bar-item {
+  display: grid;
+  grid-template-columns: var(--icon-size) auto;
+  align-items: center;
+  gap: 1em;
+  margin-top: 0.5rem;
+}
+
+.bar-icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border: dashed 1px red;
+}
