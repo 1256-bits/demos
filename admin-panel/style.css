@@ -6,6 +6,11 @@
   --bar-icon-color: white;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .sidebar {
   display: grid;
   grid-template-rows: repeat(3, auto);
