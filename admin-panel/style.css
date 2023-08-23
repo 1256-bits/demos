@@ -50,12 +50,16 @@
   height: var(--icon-size);
 }
 
-.bar-menu-link:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.bar-item {
+  text-decoration: none;
 }
 
-.bar-menu-link:visited {
-    color: white;
-    text-decoration: none;
+.bar-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bar-item:visited {
+  color: white;
+  text-decoration: none;
 }
