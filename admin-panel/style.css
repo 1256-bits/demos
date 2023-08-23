@@ -3,6 +3,7 @@
 :root {
   --icon-size: 30px;
   --logo-icon-size: 40px;
+  --bar-icon-color: white;
 }
 
 .sidebar {
@@ -21,27 +22,40 @@
 .logo-icon {
   height: var(--logo-icon-size);
   width: var(--logo-icon-size);
-  border: dashed 1px red;
-}
-
-.logo {
-  display: grid;
-  grid-template-columns: var(--logo-icon-size) auto;
-  align-items: center;
-  gap: 1em;
-  font-size: 1.5rem;
 }
 
 .bar-item {
-  display: grid;
-  grid-template-columns: var(--icon-size) auto;
+  display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  gap: calc(1rem - var(--logo-icon-size) + var(--icon-size));
+}
+
+.logo-icon,
+.bar-icon {
+  fill: var(--bar-icon-color);
+}
+
+.bar-menu-link {
   margin-top: 0.5rem;
+  text-decoration: none;
 }
 
 .bar-icon {
   width: var(--icon-size);
   height: var(--icon-size);
-  border: dashed 1px red;
+}
+
+.bar-menu-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bar-menu-link:visited {
+    color: white;
+    text-decoration: none;
 }
